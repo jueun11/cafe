@@ -1,0 +1,64 @@
+#mainBg {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+}
+#mainBg > div:nth-child(1) {
+  height: 100vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/mark_up/image/page-bg/mainBg.png");
+  background-position: center center;
+}
+#mainBg > div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section {
+  border: 1px solid red;
+  width: 80vw;
+  height: 30vh;
+  margin-top: 30vh;
+}
+main > #mainPopup {
+  width: 8vw;
+  height: 16vh;
+  position: absolute;
+  bottom: 15vh;
+  right: 10vw;
+  padding: 2vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+main > #mainPopup > div:nth-child(1) {
+  color: var(--color-1);
+  font-weight: 400;
+  border: 1px solid red;
+}
+main > #social {
+  height: 3vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+main > #social > div {
+  width: 3vh;
+  height: 3vh;
+  background-color: #c4c4c4;
+  margin-right: 1vw;
+}/*# sourceMappingURL=index.css.map */
