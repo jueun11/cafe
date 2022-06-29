@@ -28,10 +28,43 @@ main {
   align-items: center;
 }
 main > section {
-  border: 1px solid red;
   width: 80vw;
-  height: 30vh;
   margin-top: 30vh;
+}
+main > section > div:nth-child(1) {
+  color: var(--color-1);
+}
+main > section > div:nth-child(1) > h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+main > section > div:nth-child(1) > h1 > span {
+  color: var(--color-3);
+}
+main > section > div:nth-child(1) > p {
+  font-size: 1.2rem;
+  margin-top: 2vh;
+}
+main > section > div:nth-child(2) {
+  width: 13vw;
+  height: 5vh;
+  background-color: var(--color-3);
+  display: flex;
+  border-radius: 50px;
+  justify-content: space-between;
+  padding-left: 1vw;
+  align-items: center;
+  padding-right: 1vw;
+  margin-top: 7vh;
+}
+main > section > div:nth-child(2) > h3 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+main > section > div:nth-child(2) > div:nth-child(2) {
+  width: 5vh;
+  height: 2vh;
+  background-color: #c4c4c4;
 }
 main > #mainPopup {
   width: 8vw;
@@ -40,13 +73,29 @@ main > #mainPopup {
   bottom: 15vh;
   right: 10vw;
   padding: 2vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main > #mainPopup > div:nth-child(1) {
   color: var(--color-1);
   font-weight: 400;
-  border: 1px solid red;
+}
+main > #mainPopup > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+main > #mainPopup > div:nth-child(2) > P {
+  width: 4vw;
+  border: 1px solid var(--color-1);
+  display: flex;
+  color: var(--color-1);
+  align-items: center;
+  justify-content: center;
 }
 main > #social {
   height: 3vh;

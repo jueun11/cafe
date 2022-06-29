@@ -10,12 +10,6 @@
     overflow: hidden;
     background-image: url("/mark_up/image/page-bg/mainBg.png");
     background-position: center center;
-    // &>img{
-    //   // width: 100%;
-    //   // height: 100%;
-    //   max-width: 100%;
-    //   max-height: 100%;
-    // }
   }
   &>div:nth-child(2){
     position: absolute;    
@@ -32,10 +26,44 @@ main{
   flex-direction: column;
   align-items: center;
   &>section{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 80vw;
-    height: 30vh;
     margin-top: 30vh;
+    &>div:nth-child(1){
+      color: var(--color-1);
+      &>h1{
+        font-size: 3.5rem;
+        font-weight: 400;
+        &>span{
+          color: var(--color-3);
+        }
+      }
+      &>p{
+        font-size: 1.2rem;
+        margin-top: 2vh;
+      }
+    }
+    &>div:nth-child(2){
+      width: 13vw;
+      height: 5vh;
+      background-color: var(--color-3);
+      display: flex;
+      border-radius: 50px;
+      justify-content: space-between;
+      padding-left: 1vw;
+      align-items: center;
+      padding-right: 1vw;
+      margin-top: 7vh;
+      &>h3{
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      &>div:nth-child(2){
+        width: 5vh;
+        height: 2vh;
+        background-color: #c4c4c4;
+      }
+    }
   }
   &>#mainPopup{
     width: 8vw;
@@ -44,12 +72,27 @@ main{
     bottom: 15vh;
     right: 10vw;
     padding: 2vh;
-    background-color: rgba(0, 0, 0,0.2);
+    background-color: rgba(0, 0, 0,0.3);
+    backdrop-filter: blur(5px);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &>div:nth-child(1){
       color: var(--color-1);
       font-weight: 400;
-      border: 1px solid red;
+    }
+    &>div:nth-child(2){
+      display: flex;
+      justify-content: flex-end;
+      &>P{
+        width: 4vw;
+        border: 1px solid var(--color-1);
+        display: flex;
+        color: var(--color-1);
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
   &>#social{
