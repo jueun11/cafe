@@ -44,6 +44,7 @@ main > section > div:nth-child(1) > h1 > span {
 main > section > div:nth-child(1) > p {
   font-size: 1.2rem;
   margin-top: 2vh;
+  font-weight: 200;
 }
 main > section > div:nth-child(2) {
   width: 13vw;
@@ -59,7 +60,7 @@ main > section > div:nth-child(2) {
 }
 main > section > div:nth-child(2) > h3 {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 500;
 }
 main > section > div:nth-child(2) > div:nth-child(2) {
   width: 5vh;

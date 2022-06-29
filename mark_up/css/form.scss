@@ -1,13 +1,8 @@
 *{margin: 0; padding: 0; box-sizing: border-box;
-  font-family: 'NotoSerifKR';
+  font-family: 'Noto Serif KR', serif;
+}
 
-}
-@font-face {
-  font-family: 'NotoSerifKR';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 :root {
   --color-1:#fff;
   --color-2:#331E18;

@@ -41,6 +41,8 @@ main{
       &>p{
         font-size: 1.2rem;
         margin-top: 2vh;
+        font-weight: 200;
+
       }
     }
     &>div:nth-child(2){
@@ -56,7 +58,7 @@ main{
       margin-top: 7vh;
       &>h3{
         font-size: 1rem;
-        font-weight: 100;
+        font-weight: 500;
       }
       &>div:nth-child(2){
         width: 5vh;
