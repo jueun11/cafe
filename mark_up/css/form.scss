@@ -1,7 +1,11 @@
 *{margin: 0; padding: 0; box-sizing: border-box;
   font-family: 'Noto Serif KR', serif;
+  list-style: none;
 }
-
+a{
+  color: var(--color-1);
+  text-decoration: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 :root {
   --color-1:#fff;
@@ -14,10 +18,13 @@
 header{
   width: 100vw;
   position: fixed;
-  top: 5vh;
+  top: 0;
+  height: 30vh;
+  padding-top: 5vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
   &>nav{
     width: 90vw;
     // height: 5vh;
@@ -30,7 +37,7 @@ header{
       &>div:nth-child(1){
         width: 3vh;
         height: 3vh;
-        background-color: aqua;
+        // background-color: aqua;
       }
       &>h1{
         font-size: 2vh;
@@ -41,37 +48,41 @@ header{
     }
     &>#menu{
       display: flex;
-      &>a{
-        margin-left: 3vw;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: var(--color-1);
-      }
-    }
-  }
-  &>section{
-    width: 100vw;
-    display: flex;
-    display: none;
-    justify-content: center;
-    height: 17vh;
-    //여기를 마우스 hover자바스크립트 제어
-    background-color: rgb(88, 10, 10);
-    &>ul{
-      width: 90vw;
-      display: flex;
-      list-style: none;
-      flex-direction: row;
-      justify-content: flex-end;
+      // border: 1px solid blue;
       &>li{
-        display: flex;
-        flex-direction: column;
         margin-left: 3vw;
-        &>a:nth-child(1){
-          opacity: 0;
-          height: 1.5vh;
+        color: var(--color-1);
+        &>h2{
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        &>ul{
+          margin-top: 3vh;
+          display: flex;
+          flex-direction: column;
         }
       }
     }
   }
 }
+#menuBg{
+  width: 100vw;
+  justify-content: center;
+  z-index: -1;
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  top: 0vh;
+}
+.menu_sub{
+  // height: 20vh;
+  // border: 1px solid red;
+  overflow: hidden;
+  display: none;
+}
+.menu_sub > li{
+  display: none;
+}
+//이거로 제어하면댈듯

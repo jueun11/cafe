@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Serif KR", serif;
+  list-style: none;
+}
+
+a {
+  color: var(--color-1);
+  text-decoration: none;
 }
 
 :root {
@@ -18,10 +24,13 @@
 header {
   width: 100vw;
   position: fixed;
-  top: 5vh;
+  top: 0;
+  height: 30vh;
+  padding-top: 5vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 header > nav {
   width: 90vw;
@@ -35,7 +44,6 @@ header > nav > #title {
 header > nav > #title > div:nth-child(1) {
   width: 3vh;
   height: 3vh;
-  background-color: aqua;
 }
 header > nav > #title > h1 {
   font-size: 2vh;
@@ -46,33 +54,38 @@ header > nav > #title > h1 {
 header > nav > #menu {
   display: flex;
 }
-header > nav > #menu > a {
+header > nav > #menu > li {
   margin-left: 3vw;
-  font-size: 1.2rem;
-  font-weight: 500;
   color: var(--color-1);
 }
-header > section {
-  width: 100vw;
-  display: flex;
-  display: none;
-  justify-content: center;
-  height: 17vh;
-  background-color: rgb(88, 10, 10);
+header > nav > #menu > li > h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-header > section > ul {
-  width: 90vw;
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-header > section > ul > li {
+header > nav > #menu > li > ul {
+  margin-top: 3vh;
   display: flex;
   flex-direction: column;
-  margin-left: 3vw;
 }
-header > section > ul > li > a:nth-child(1) {
-  opacity: 0;
-  height: 1.5vh;
+
+#menuBg {
+  width: 100vw;
+  justify-content: center;
+  z-index: -1;
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0vh;
+}
+
+.menu_sub {
+  overflow: hidden;
+  display: none;
+}
+
+.menu_sub > li {
+  display: none;
 }/*# sourceMappingURL=form.css.map */

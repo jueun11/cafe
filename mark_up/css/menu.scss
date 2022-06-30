@@ -1,0 +1,98 @@
+main{
+  width: 100vw;
+  background-color: #c4c4c4;
+  &>div:nth-child(1){
+    height: 15vh;
+    background-color: antiquewhite;
+  }
+  &>div:nth-child(2){
+    background-image: url("/mark_up/image/banner/coffee_banner.png");
+    // background-color: rgba(0, 0, 0,0.2);
+  }
+  &>div:nth-child(6){
+    height: 25vh;
+    background-color: gray;
+  }
+}
+.menu{
+  height: 35vh;
+  border: 1px solid red;
+}
+.menu-right{
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  &>div{
+    margin-right: 15vw;
+    width: 30vw;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid rgb(199, 253, 3);
+    align-items: center;
+    justify-content: space-between;
+    &>div:nth-child(1){
+      position: relative;
+      left: -3vw;
+    }
+    &>div:nth-child(2){
+      color: var(--color-3);
+      &>h2{
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      &>p{
+        margin-top: 1vh;
+        font-size: 0.9rem;
+        font-weight: 100;
+      }
+    }
+    &>div:nth-child(3){
+      position: relative;
+      left: 3vw;
+    }
+  }
+}
+.menu-left{
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &>div{
+    margin-left: 15vw;
+    width: 30vw;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid rgb(199, 253, 3);
+    align-items: center;
+    justify-content: space-between;
+    &>div:nth-child(1){
+      position: relative;
+      left: -3vw;
+    }
+    &>div:nth-child(2){
+      color: var(--color-3);
+      &>h2{
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      &>p{
+        margin-top: 1vh;
+        font-size: 0.9rem;
+        font-weight: 100;
+      }
+    }
+    &>div:nth-child(3){
+      position: relative;
+      left: 3vw;
+    }
+  }
+}
+.menu-line{
+  width: 25vw;
+  height: 1px;
+  background: linear-gradient(to right, rgba(249, 246, 222,0),  rgb(249, 246, 222,1),rgba(249, 246, 222,0));
+}
