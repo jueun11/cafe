@@ -93,4 +93,8 @@ header > nav > #menu > li > ul {
 }
 .menu_sub > li > a {
   color: var(--color-1);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,72 @@
+#menu > li:nth-child(3) > h2 > a {
+  color: var(--color-3);
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+main > section {
+  margin-top: 10vh;
+  width: 60vw;
+  overflow-x: hidden;
+}
+main > section > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+}
+main > section > div:nth-child(2) {
+  margin-top: 5vh;
+  border: 1px solid red;
+}
+main > section > div:nth-child(2) > div:nth-child(1) {
+  border: 1px solid red;
+}
+main > section > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 2vh;
+  border: 1px solid rgb(179, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 18vw;
+  height: 50vh;
+  background-color: #c4c4c4;
+}
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 40vw;
+  border: 1px solid black;
+}
+main > section > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 7vh;
+  height: 40vh;
+  border: 1px solid rgb(0, 255, 179);
+}
+main > section > div:nth-child(2) > div:nth-child(4) {
+  margin-top: 7vh;
+  height: 5vh;
+  border: 1px solid rgb(0, 60, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+main > section > div:nth-child(2) > div:nth-child(4) > div {
+  width: 10vw;
+  height: 5vh;
+  background-color: #c4c4c4;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#headBg {
+  height: 35vh;
+  width: 100vw;
+  background-color: #c4c4c4;
+}/*# sourceMappingURL=exhibition-sub.css.map */

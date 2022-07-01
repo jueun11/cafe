@@ -1,0 +1,40 @@
+#menu{
+  &>li:nth-child(5){
+    &>h2{
+      &>a{
+        color: var(--color-3);
+      }
+    }
+  }
+}
+main{
+  width: 100vw;
+  display: flex;
+  overflow-x: hidden ;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+    &>section{
+      margin-top: 10vh;
+      width: 60vw;
+      overflow-x: hidden ;
+      // border: 1px solid red;
+      &>div:nth-child(1){
+        display: flex;
+        justify-content: flex-end;
+      }
+      &>div:nth-child(2){
+        margin-top: 5vh;
+        border: 1px solid red;
+        &>div:nth-child(1){
+          border: 1px solid red;
+      }
+    }
+  }  
+}
+
+#headBg{
+  height: 35vh;
+  width: 100vw;
+  background-color: #c4c4c4;
+} 
