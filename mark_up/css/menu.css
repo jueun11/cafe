@@ -1,13 +1,15 @@
+#menu > li:nth-child(2) > h2 > a {
+  color: var(--color-3);
+}
+
 main {
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   background-color: #c4c4c4;
 }
 main > div:nth-child(1) {
   height: 15vh;
   background-color: antiquewhite;
-}
-main > div:nth-child(2) {
-  background-image: url("/mark_up/image/banner/coffee_banner.png");
 }
 main > div:nth-child(6) {
   height: 25vh;
@@ -15,8 +17,8 @@ main > div:nth-child(6) {
 }
 
 .menu {
+  width: 100vw;
   height: 35vh;
-  border: 1px solid red;
 }
 
 .menu-right {
@@ -96,4 +98,12 @@ main > div:nth-child(6) {
   width: 25vw;
   height: 1px;
   background: linear-gradient(to right, rgba(249, 246, 222, 0), rgb(249, 246, 222), rgba(249, 246, 222, 0));
+}
+
+.dark {
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  top: 15vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=menu.css.map */
