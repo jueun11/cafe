@@ -29,7 +29,7 @@ main{
       // height: 170vh;
       display: grid ;
       gap: 20px;
-      row-gap: 50px;
+      row-gap: 70px;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       justify-content: center;
@@ -41,17 +41,84 @@ main{
         &>div:nth-child(1){
           width: 100%;
           height: 50vh;
-          background-color: bisque;
+          background-color: rgb(165, 105, 31);
+          &>img{
+            width: 100%;
+            height: 100%;
+          }
         }
         &>p{
-          margin-top: 1vh;
+          margin-top: 2vh;
+          text-align: center;
         }
       }
     }
   }  
 }
+
 #headBg{
   height: 35vh;
   width: 100vw;
-  background-color: #c4c4c4;
+  // background-color: #c4c4c4;
+  &>div:nth-child(1){
+    position: absolute;
+    z-index: -1;
+    &>.dark{
+      height: 35vh;
+      width: 100vw;
+      position: absolute;
+      background-color:rgba(0, 0, 0, 0.3);
+    }
+    &>div:nth-child(2){
+      height: 35vh;
+      width: 100vw;
+      background-image: url(/mark_up/image/page-bg/exhibitionBG.png);
+    }
+  }
+} 
+
+
+.menu-left{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  // border: 1px solid red;
+  &>div{
+    margin-top: 2vh;
+    margin-left: 15vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &>div:nth-child(1){
+      position: relative;
+      left: -3vw;
+    }
+    &>div:nth-child(2){
+      color: var(--color-3);
+      &>h2{
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      &>p{
+        margin-top: 1vh;
+        font-size: 0.9rem;
+        font-weight: 100;
+      }
+    }
+    &>div:nth-child(3){
+      position: relative;
+      left: 3vw;
+    }
+  }
+}
+
+.menu-line{
+  width: 25vw;
+  height: 1px;
+  margin: 2vh;
+  background: linear-gradient(to right, rgba(249, 246, 222,0),  rgb(249, 246, 222,1),rgba(249, 246, 222,0));
 }

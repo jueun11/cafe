@@ -1,4 +1,4 @@
-#menu > li:nth-child(3) > h2 > a {
+#menu > li:nth-child(6) > h2 > a {
   color: var(--color-3);
 }
 
@@ -22,70 +22,71 @@ main > section > div:nth-child(1) {
 main > section > div:nth-child(2) {
   margin-top: 5vh;
 }
+main > section > div:nth-child(2) > div:nth-child(1) > p {
+  margin-top: 2vh;
+}
 main > section > div:nth-child(2) > div:nth-child(2) {
-  margin-top: 5vh;
+  margin-top: 13vh;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
 }
 main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
-  width: 18vw;
-}
-main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > img {
-  width: 100%;
+  width: 38vw;
+  height: 40vh;
+  background-color: gray;
+  background-image: url(/mark_up/image/contact1.png);
+  background-size: cover;
 }
 main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
-  width: 40vw;
+  display: grid;
+  width: 40vh;
+  height: 40vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2vh;
 }
 main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div {
-  margin-top: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > p {
-  margin-bottom: 2vh;
-}
-main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > p {
-  margin-bottom: 2vh;
-}
-main > section > div:nth-child(2) > div:nth-child(3) {
-  margin-top: 7vh;
+  background-color: aqua;
+  padding: 1vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > p {
-  margin-top: 3vh;
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > h3 {
+  color: var(--color-2);
 }
-main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
-  margin-top: 5vh;
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > p {
+  margin-top: 1vh;
+  color: var(--color-2);
+  font-size: 0.9rem;
 }
-main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > p {
-  margin-top: 3vh;
-}
-main > section > div:nth-child(2) > div:nth-child(4) {
-  margin-top: 10vh;
-  height: 5vh;
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
 }
-main > section > div:nth-child(2) > div:nth-child(4) > div {
-  width: 10vw;
-  height: 5vh;
-  margin-left: 2vw;
+main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div {
+  height: 3vh;
+  width: 5vw;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  color: white;
 }
-main > section > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) {
-  background-color: #D3AFAA;
-  color: #7B5244;
+main > section > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 13vh;
 }
-main > section > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
-  background-color: #7B5244;
-  color: #D3AFAA;
+main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  margin-top: 3vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+}
+main > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div {
+  width: 30vw;
+  margin-top: 2vh;
 }
 
 #headBg {
@@ -100,30 +101,12 @@ main > section > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
   height: 35vh;
   width: 100vw;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #headBg > div:nth-child(1) > div:nth-child(2) {
   height: 35vh;
   width: 100vw;
-  background-image: url(/mark_up/image/page-bg/exhibition-subBG.png);
-}
-
-.line {
-  width: 100vw;
-  height: 3vh;
-  position: relative;
-  top: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.line::after {
-  content: "";
-  flex-grow: 1;
-  margin-left: 1vw;
-  background-color: #000000;
-  height: 1px;
+  background-image: url(/mark_up/image/page-bg/contactBg.png);
 }
 
 .menu-left {
@@ -168,4 +151,4 @@ main > section > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
   height: 1px;
   margin: 2vh;
   background: linear-gradient(to right, rgba(249, 246, 222, 0), rgb(249, 246, 222), rgba(249, 246, 222, 0));
-}/*# sourceMappingURL=exhibition-sub.css.map */
+}/*# sourceMappingURL=contact.css.map */

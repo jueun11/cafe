@@ -6,11 +6,6 @@ main {
   align-items: center;
   margin-bottom: 10vh;
 }
-main > #headBg {
-  height: 35vh;
-  width: 100vw;
-  background-color: #c4c4c4;
-}
 main > section {
   margin-top: 10vh;
   width: 60vw;
@@ -31,7 +26,6 @@ main > section > div:nth-child(2) {
   justify-content: center;
 }
 main > section > div:nth-child(2) > div {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +33,6 @@ main > section > div:nth-child(2) > div {
 main > section > div:nth-child(2) > div > div:nth-child(1) {
   width: 100%;
   height: 30vh;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,16 +40,107 @@ main > section > div:nth-child(2) > div > div:nth-child(1) {
 main > section > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(1) {
   width: 100%;
   height: 25vh;
-  border: 1px solid red;
-  background-color: #c4c4c4;
   position: relative;
   z-index: -2;
 }
 main > section > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) {
   width: 7vw;
   height: 20vh;
-  border: 1px solid red;
   position: absolute;
   margin-top: 10vh;
   z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > img {
+  width: 200%;
+}
+#headBg {
+  height: 35vh;
+  width: 100vw;
+}
+#headBg > div:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+}
+#headBg > div:nth-child(1) > .dark {
+  height: 35vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#headBg > div:nth-child(1) > div:nth-child(2) {
+  height: 35vh;
+  width: 100vw;
+  background-image: url(/mark_up/image/page-bg/coffee_bg.png);
+}
+
+.menu-left {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.menu-left > div {
+  margin-top: 2vh;
+  margin-left: 15vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-left > div > div:nth-child(1) {
+  position: relative;
+  left: -3vw;
+}
+.menu-left > div > div:nth-child(2) {
+  color: var(--color-3);
+}
+.menu-left > div > div:nth-child(2) > h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.menu-left > div > div:nth-child(2) > p {
+  margin-top: 1vh;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.menu-left > div > div:nth-child(3) {
+  position: relative;
+  left: 3vw;
+}
+
+.menu-line {
+  width: 25vw;
+  height: 1px;
+  margin: 2vh;
+  background: linear-gradient(to right, rgba(249, 246, 222, 0), rgb(249, 246, 222), rgba(249, 246, 222, 0));
+}
+
+.cafe_latte {
+  margin-left: 2vw;
+}
+
+.mocha > img {
+  margin-top: -5vh;
+}
+
+.latte > img {
+  margin-left: 2vw;
+  margin-top: -2vh;
+}
+
+.top > img {
+  margin-top: -3vh;
+}
+
+.top2 > img {
+  margin-top: -4vh;
+}
+
+.bottom > img {
+  margin-bottom: -2vh;
 }/*# sourceMappingURL=menu-coffee.css.map */
