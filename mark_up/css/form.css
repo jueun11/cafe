@@ -43,6 +43,12 @@ header > nav > #title {
 header > nav > #title > div:nth-child(1) {
   width: 3vh;
   height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > nav > #title > div:nth-child(1) > img {
+  width: 100%;
 }
 header > nav > #title > h1 {
   font-size: 2vh;

@@ -6,9 +6,9 @@ main {
   width: 100%;
   overflow-x: hidden;
 }
-main > div:nth-child(1) {
+main > div:nth-child(1) > div:nth-child(2) {
   height: 15vh;
-  background-color: rgb(80, 80, 80);
+  background-image: url(/mark_up/image/banner/1.png);
 }
 main > div:nth-child(2) > div:nth-child(1) {
   background-image: url(/mark_up/image/banner/coffee_banner.png);
@@ -24,12 +24,27 @@ main > div:nth-child(5) > div:nth-child(1) {
 }
 main > div:nth-child(6) {
   height: 25vh;
-  background-color: gray;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+main > div:nth-child(6) > #cupBg {
+  width: 100vw;
+  height: 25vh;
+  z-index: -1;
+  position: absolute;
+}
+main > div:nth-child(6) > #cupBg > div:nth-child(1) {
+  width: 100vw;
+  height: 25vh;
+}
+main > div:nth-child(6) > #cupBg > div:nth-child(2) {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(/mark_up/image/banner/ad.png);
+}
 main > div:nth-child(6) > div:nth-child(2) {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,14 +83,6 @@ main > div:nth-child(6) > div:nth-child(2) > p {
   position: absolute;
   z-index: -2;
 }
-.menu > .Bg > div:nth-child(2) {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  z-index: -1;
-}
-
 .Bg {
   width: 100%;
   height: 35vh;
@@ -132,7 +139,6 @@ main > div:nth-child(6) > div:nth-child(2) > p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border: 1px solid red;
 }
 .menu-left > div {
   margin-left: 15vw;
@@ -162,4 +168,33 @@ main > div:nth-child(6) > div:nth-child(2) > p {
 .menu-left > div > div:nth-child(3) {
   position: relative;
   left: 3vw;
+}
+
+.dark {
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  z-index: 2;
+  top: 0vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark2 {
+  width: 100vw;
+  height: 15vh;
+  position: absolute;
+  z-index: 10;
+  top: 0vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark3 {
+  width: 100vw;
+  height: 25vh;
+  position: absolute;
+  z-index: 10;
+  top: 0vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=menu.css.map */
