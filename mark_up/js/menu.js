@@ -1,4 +1,4 @@
-import { main,menuColor } from "./form.js";
+import { main,menuColor } from "./form-basic.js";
 
 console.log(main);
 

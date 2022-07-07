@@ -13,5 +13,5 @@ const contacBox = document.getElementsByClassName('contactBox');
 
 contacBox[0].style.backgroundColor = "#E7CEB4";
 contacBox[1].style.backgroundColor = "#DCA269";
-contacBox[2].style.backgroundColor = "#7B5244";
+contacBox[2].style.backgroundColor = "#FDE6B6";
 contacBox[3].style.backgroundColor = "#D3AFAA";

@@ -27,6 +27,8 @@ main{
         margin-top: 5vh;
         // border: 1px solid red;
         &>div:nth-child(1){
+          color: var(--color-2);
+
           // border: 1px solid red;
           &>p{
             margin-top: 2vh;
@@ -86,6 +88,8 @@ main{
         &>div:nth-child(3){
           // border: 1px solid rgb(0, 81, 255);
           margin-top:13vh;
+          color: var(--color-2);
+
           &>div:nth-child(2){
             margin-top: 3vh;
             display: grid;
@@ -96,6 +100,11 @@ main{
               width: 30vw;
               // border: 1px solid red;
               margin-top: 2vh;
+              color: var(--color-2);
+
+              &>p{
+                margin-top: 2vh;
+              }
             }
           }
         }
@@ -168,4 +177,13 @@ main{
   height: 1px;
   margin: 2vh;
   background: linear-gradient(to right, rgba(249, 246, 222,0),  rgb(249, 246, 222,1),rgba(249, 246, 222,0));
+}
+
+
+h2{
+  // color: var(--color-2);
+  
+}
+h3{
+  color: var(--color-2);
 }

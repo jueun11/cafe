@@ -8,7 +8,7 @@ let LIheightValue = 0;
 let mouseEvent = true;
 
 function fadeInBG (event){
-  // console.log('메뉴위에 마우스 올림');
+  console.log('메뉴위에 마우스 올림');
   mouseEvent = true;
     menuBg.style.display = "flex";
     for(let i = 0; i < menuSubli.length; i++){
@@ -45,7 +45,7 @@ function fadeInBG (event){
 
 
 function fadeOutBG (event){
-  // console.log("밖으로");
+  console.log("밖으로");
   mouseEvent = false;
   let fadeOutBG = setInterval(function(){
     menuBg.style.height = BGheightValue + "vh";
@@ -103,32 +103,3 @@ for(let i =0; i< menu.length; i++){
   export {main,menuColor};
 
 
-  //스크롤 아래로 내렸을때 메뉴 바 뒤에 배경생기는 기능
-
-  const firstDiv = document.getElementById('headBg');
-  // console.log(firstDiv.clientHeight);
-  
-  const divBg = document.createElement('div');
-  divBg.id = 'divBg';
-
-  divBg.style.width = 100+"vw";
-  divBg.style.height = 12+"vh";
-  divBg.style.backgroundColor = "black";
-  divBg.style.position = "fixed";
-  divBg.style.top = 0;
-  divBg.style.opacity = 0;
-  divBg.style.transition = "0.5s";
-
-  main.appendChild(divBg);
-
-
-  document.body.addEventListener('wheel',function(){
-    console.log(main);
-    let winY = window.pageYOffset;
-    console.log(winY);
-    if(winY > firstDiv.clientHeight-firstDiv.clientHeight/2){
-      divBg.style.opacity = 0.7;
-    } else if(winY < firstDiv.clientHeight-firstDiv.clientHeight/2){
-      divBg.style.opacity = 0;
-    }
-  });
