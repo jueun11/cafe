@@ -17,7 +17,8 @@
     height: 100vh;
     position:relative;
     overflow: hidden;
-    background-image: url("./mark_up/image/page-bg/mainBg.png");
+
+    background-image: url("./image/page-bg/mainBg.png");
     background-position: center center;
   }
   &>div:nth-child(2){
