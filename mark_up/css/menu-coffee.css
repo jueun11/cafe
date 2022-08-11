@@ -73,7 +73,7 @@ main > section > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2) > 
 #headBg > div:nth-child(1) > div:nth-child(2) {
   height: 35vh;
   width: 100vw;
-  background-image: url(/mark_up/image/page-bg/coffee_bg.png);
+  background-image: url("./image/page-bg/coffee_bg.png");
 }
 
 .menu-left {
