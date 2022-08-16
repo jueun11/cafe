@@ -17,7 +17,6 @@ main > section > div:nth-child(1) {
 }
 main > section > div:nth-child(2) {
   margin-top: 5vh;
-  height: 110vh;
   display: grid;
   gap: 20px;
   row-gap: 50px;
