@@ -77,7 +77,9 @@ main{
   }
 } 
 
-
+.posterlink:hover{
+  cursor: pointer;
+}
 .menu-left{
   width: 100vw;
   display: flex;

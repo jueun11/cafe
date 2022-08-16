@@ -67,6 +67,10 @@ main > section > div:nth-child(2) > div > p {
   background-image: url("./image/page-bg/exhibitionBG.png");
 }
 
+.posterlink:hover {
+  cursor: pointer;
+}
+
 .menu-left {
   width: 100vw;
   display: flex;
