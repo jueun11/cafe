@@ -105,7 +105,7 @@ main > section > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
 #headBg > div:nth-child(1) > div:nth-child(2) {
   height: 35vh;
   width: 100vw;
-  background-image: url(/mark_up/image/page-bg/exhibition-subBG.png);
+  background-image: url("./image/page-bg/exhibition-subBG.png");
 }
 
 .line {

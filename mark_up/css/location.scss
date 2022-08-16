@@ -102,7 +102,12 @@ main{
                 margin-left: 1vw;
                 width: 3vh;
                 height: 3vh;
-                background-color: gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &>img{
+                  width: 80%;
+                }
               }
             }
           }
@@ -152,7 +157,7 @@ main{
     &>div:nth-child(2){
       height: 35vh;
       width: 100vw;
-      background-image: url(/mark_up/image/page-bg/locationBg.png);
+      background-image: url("./image/page-bg/locationBg.png");
     }
   }
 } 
