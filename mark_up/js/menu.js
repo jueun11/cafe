@@ -7,6 +7,8 @@ main.addEventListener('mouseover',function(){
     element.style.color = "#fff";
   });
   menuColor[1].style.color = "#FDE6B6";
+  menuColor[1].style.borderBottom = "3px solid";
+  menuColor[1].style.borderImageLice = "1";
 });
 
 console.log(menu);

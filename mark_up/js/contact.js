@@ -7,6 +7,8 @@ main.addEventListener('mouseover',function(){
     element.style.color = "#fff";
   });
   menuColor[5].style.color = "#FDE6B6";
+  menuColor[5].style.borderBottom = "3px solid";
+  menuColor[5].style.borderImageLice = "1";
 });
 
 const contacBox = document.getElementsByClassName('contactBox');

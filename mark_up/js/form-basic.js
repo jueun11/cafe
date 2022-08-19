@@ -92,6 +92,8 @@ for(let i =0; i< menu.length; i++){
   function colorValue(event){
     menuColor.forEach(function(element){
       element.style.color = "#fff";
+      element.style.borderBottom = "0px";
+
     });
     event.target.style.color = "#FDE6B6";
   }

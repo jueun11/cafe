@@ -7,6 +7,8 @@ main.addEventListener('mouseover',function(){
     element.style.color = "#fff";
   });
   menuColor[2].style.color = "#FDE6B6";
+  menuColor[2].style.borderBottom = "3px solid";
+  menuColor[2].style.borderImageLice = "1";
 });
 
 const link = 'exhibition-sub.html';

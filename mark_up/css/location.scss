@@ -3,6 +3,9 @@
     &>h2{
       &>a{
         color: var(--color-3);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to right,rgba(253, 230, 182, 0), rgba(253, 230, 182, 1),rgba(253, 230, 182, 0));
+        border-image-slice: 1;
       }
     }
   }
